@@ -1,0 +1,22 @@
+/* by Igor Duarte Brochado - igorduartetkd@gmail.com
+* Problema 842 - OBIHANOI - Torres de Hanói - SPOJ - ok
+*/
+
+
+#include <stdio.h>
+#include <cmath>
+
+using namespace std;
+int main(){
+	int n, contador, total;
+	contador = 0;
+
+	while(scanf("%d", &n), n){
+		printf("Teste %d\n", ++contador);
+
+		total = pow(2, n);
+		total --;
+		printf("%d\n\n", total);
+		
+	}
+}
