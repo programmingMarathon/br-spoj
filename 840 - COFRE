@@ -1,0 +1,30 @@
+/* by Igor Duarte Brochado - igorduartetkd@gmail.com
+* Problema 840 - COFRE - Cofrinhos da Vó Vitória - SPOJ - OK
+*/
+
+#include <stdio.h>
+using namespace std;
+
+int main(){
+	int contador, n, i, soma, j, z;
+
+	contador = 0;
+
+	while(scanf("%d", &n), n){
+		soma = 0;
+		contador++;
+
+		printf("Teste %d\n", contador);
+
+		for(i=0; i<n; i++){
+			scanf("%d %d", &j, &z);
+
+			soma = soma + j - z;
+
+			printf("%d\n", soma);
+		}
+
+		printf("\n");
+
+	}
+}
